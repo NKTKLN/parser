@@ -1,10 +1,10 @@
 import requests, time
 # # #
-parsertokens = ['0123456789:ABC10DEFGhIJKlmnO1P1QrS-tuvw1XYZaB1',
-                '0123456789:ABC10DEFGhIJKlmnO1P1QrS-tuvw1XYZaB1',
-                '0123456789:ABC10DEFGhIJKlmnO1P1QrS-tuvw1XYZaB1',
-                '0123456789:ABC10DEFGhIJKlmnO1P1QrS-tuvw1XYZaB1',
-                '0123456789:ABC10DEFGhIJKlmnO1P1QrS-tuvw1XYZaB1']
+parsertokens = ['01234567890a1b1c121d3f1gh4151617181920i212j2k2l3m2425n26o2p7q2r8s2t930',
+                '01234567890a1b1c121d3f1gh4151617181920i212j2k2l3m2425n26o2p7q2r8s2t930',
+                '01234567890a1b1c121d3f1gh4151617181920i212j2k2l3m2425n26o2p7q2r8s2t930',
+                '01234567890a1b1c121d3f1gh4151617181920i212j2k2l3m2425n26o2p7q2r8s2t930',
+                '01234567890a1b1c121d3f1gh4151617181920i212j2k2l3m2425n26o2p7q2r8s2t930']
 token = '0123456789:ABC10DEFGhIJKlmnO1P1QrS-tuvw1XYZaB1'
 chat_id = '@chanal_name'
 chanals = ['chanal_name', 'chanal_name', 'chanal_name', '...']
