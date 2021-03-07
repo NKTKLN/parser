@@ -10,6 +10,7 @@ parsertokens = ['01234567890a1b1c121d3f1gh4151617181920i212j2k2l3m2425n26o2p7q2r
                 '01234567890a1b1c121d3f1gh4151617181920i212j2k2l3m2425n26o2p7q2r8s2t930']
 token = '0123456789:ABC10DEFGhIJKlmnO1P1QrS-tuvw1XYZaB1'
 chat_id = '@chanal_name'
+ cap = 'caption'
 chanals = ['chanal_name', 'chanal_name', 'chanal_name', '...']
 # # #
 bot = telebot.TeleBot(token)
@@ -30,17 +31,11 @@ while True:
                     if len(respons.json()['response']['items'][00]['text']) < 50:
                         if 'copyright' not in respons.json()['response']['items'][00]:
                             urs = respons.json()['response']['items'][00]['attachments']
-                                
             else:
                 if respons.json()['response']['items'][1]['marked_as_ads'] == 0:
                     if len(respons.json()['response']['items'][1]['text']) < 50:
                         if 'copyright' not in respons.json()['response']['items'][1]:
                             urs = respons.json()['response']['items'][1]['attachments']
-
-            if chanal == 'morsik':
-                cap = '#comics'
-            else:
-                cap = '#meme'
             try:
                 url = [InputMediaPhoto(urs[0]['photo']['sizes'][7]['url'], caption=cap)] + [InputMediaPhoto(urs[i + 1]['photo']['sizes'][6]['url']) for i in range(len(urs) - 1)]
             except:
